@@ -1,0 +1,248 @@
+/* 初始化 */
+*{
+	padding: 0px;
+	margin: 0px;
+	font: 14px "Microsoft YaHei", "SimSun", '\5b8b\4f53', sans-serif;
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+	color: #333;
+}
+li{
+	list-style-type: none;
+}
+.w-1200{
+	width: 1200px;
+	margin: 0 auto;
+}
+/* 标题栏 */
+.all_nav{
+	width: 100%;
+	height: 30px;
+	background: #f5f5f5;
+}
+.nav_main{height: 30px;}
+.nav_main p{float: left;}
+.nav_main p i{
+	font-size: 14px;
+	margin: 0 4px 0 8px;
+}
+.nav_main p a{
+	display: inline-block;
+	line-height: 30px;
+}
+.nav_main>div{
+	height: 30px;
+	float: right;
+}
+.nav_main>div .login{
+	float: left;
+	margin-right: 22px;
+}
+.nav_main>div .login a{
+	color: #ff5500;
+	line-height: 30px;
+}
+.nav_main>div .shop_car{
+	float: left;
+}
+.nav_main>div .shop_car a{
+	line-height: 30px;
+}
+.nav_main>div .shop_car span{
+	margin-left: 4px;
+	color: #ff5500;
+	font-weight: bold;
+}
+/* header */
+.all_header{
+	width: 100%;
+	height: 100px;
+	line-height: 100px;
+}
+.header_main{
+	height: 100px;
+}
+.header_main .header_left{
+	display: flex;
+	align-items: center;
+	height: 100%;
+	float: left;
+	margin-left: 38px;
+}
+.header_main .header_left a img{
+	vertical-align: middle;
+}
+.header_right{
+	float: right;
+	width: 500px;
+	padding-top: 30px;
+}
+.header_right form{
+	height: 44px;
+	line-height: 44px;
+	border: 3px solid #cfb2f6;
+}
+.header_right .header_input{
+	float: left;
+	height: 100%;
+	line-height: 100%;
+	width: 436px;
+	z-index: 2;
+	border: 0;
+	background: none;
+	display: block;
+	padding-left: 10px;
+	border-radius: 2px;
+}
+.header_input:focus,.header_btn:focus{
+	outline: none;	
+}
+.header_right .header_btn{
+	width: 58px;
+	height: 38px;
+	line-height: 38px;
+	float: left;
+	background: #cfb2f6;
+	border: 0;
+	cursor: pointer;
+	transition: opacity 0.2s;
+}
+.header_right .header_btn i{
+	color: #fff;
+	font-size: 18px;
+	line-height: 38px;
+}
+.header_right .header_btn:hover{
+	opacity: 0.8;
+}
+/* content */
+.content{
+	width: 100%;
+}
+.content .content_content{
+	width: 100%;
+	border-bottom: 1px solid #cfb1f7;
+}
+.content .content_nav{
+	height: 100%;
+	padding-left: 40px;
+}
+.content .content_nav a{
+	margin-right: 75px;
+	display: inline-block;
+	font-size: 14px;
+	line-height: 36px;
+	color: #010101;
+}
+.content .content_nav a:last-child{
+	color: #cfb2f6;
+}
+.content .content_nav a:hover{
+	color: #cfb2f6;
+}
+/* 登录内容 */
+.content .login_bg{
+	height: 772px;
+	width: 100%;
+	/* background: url('../img/load_bg.jpg') no-repeat; */
+	background: url('../img/load_bg.jpg') no-repeat;
+	background-size: cover;
+}
+.content .login_bg .login_cont{
+	position: relative;
+	height: 100%;
+}
+.content .login_bg .login_cont .form_box{
+	width: 360px;
+	height: 390px;
+	border: 1px solid #d9dadc;
+	background: #fff;
+	position: absolute;
+	top: 196px;
+	right: 90px;
+	padding: 0 40px;
+}
+.content .login_bg .login_cont .form_box h1{
+	font-size: 20px;
+	color: #323232;
+	text-align: center;
+	padding: 50px 0;
+}
+.content .login_bg .login_cont .form_box input{
+	margin-bottom: 20px;
+	width: 100%;
+	height: 38px;
+	padding-left: 10px;
+	outline: none;
+	border-radius: 2px;
+	border: 1px solid #eee;
+}
+.content .login_bg .login_cont .form_box input:focus{
+	border-color: #C9C9C9;
+}
+.content .login_bg .login_cont .form_box p{
+	float: right;
+}
+.content .login_bg .login_cont .form_box button{
+	margin-top: 20px;
+	width: 100%;
+	background: #cfb2f6;
+	font-size: 18px;
+	display: inline-block;
+	height: 38px;
+	line-height: 38px;
+	color: #fff;
+	border: none;
+	border-radius: 2px;
+	cursor: pointer;
+	outline: none;
+}
+
+/* footer */
+.login_footer{
+	background: #2f2f2f;
+	padding-bottom: 54px;
+}
+.login_footer .ng-promise-box{
+	width: 100%;
+	height: 145px;
+	border-bottom: 1px solid #3d3d3d;
+	line-height: 145px;
+}
+.login_footer .ng-promise-box .ng-promise{
+	height: 100%;
+}
+.login_footer .ng-promise-box .ng-promise p{
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.login_footer .ng-promise-box .ng-promise a{
+	color: #fff;
+	font-size: 20px;
+	line-height: 40px;
+	padding-left: 44px;
+	background: url('../img/us-icon.png') no-repeat left 0;
+}
+.login_footer .ng-promise-box .ng-promise a:nth-child(2){
+	padding-left: 56px;
+	background-position: 0 -44px;
+}
+.login_footer .ng-promise-box .ng-promise a:last-child{
+	background-position: 0 -80px;
+}
+.login_footer .mod_help p{
+	margin: 38px 0 16px 0;
+	text-align: center;
+	color: #888888;
+}
+.login_footer .mod_help p.coty a{
+	color: #888888;
+}
+.login_footer .mod_help p.coty span{
+	padding: 0 22px;
+	color: #888888;
+}

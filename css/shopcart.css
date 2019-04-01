@@ -1,0 +1,404 @@
+/* 初始化 */
+*{
+	padding: 0px;
+	margin: 0px;
+	font: 14px "Microsoft YaHei", "SimSun", '\5b8b\4f53', sans-serif;
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+	color: #333;
+}
+li{
+	list-style-type: none;
+}
+.w-1200{
+	width: 1200px;
+	margin: 0 auto;
+}
+/* 标题栏 */
+.all_nav{
+	width: 100%;
+	height: 30px;
+	background: #f5f5f5;
+}
+.nav_main{height: 30px;}
+.nav_main p{float: left;}
+.nav_main p i{
+	font-size: 14px;
+	margin: 0 4px 0 8px;
+}
+.nav_main p a{
+	display: inline-block;
+	line-height: 30px;
+}
+.nav_main>div{
+	height: 30px;
+	float: right;
+}
+.nav_main>div .login{
+	float: left;
+	margin-right: 22px;
+}
+.nav_main>div .login a{
+	color: #ff5500;
+	line-height: 30px;
+}
+.nav_main>div .shop_car{
+	float: left;
+}
+.nav_main>div .shop_car a{
+	line-height: 30px;
+}
+.nav_main>div .shop_car span{
+	margin-left: 4px;
+	color: #ff5500;
+	font-weight: bold;
+}
+/* header */
+.all_header{
+	width: 100%;
+	height: 100px;
+	line-height: 100px;
+}
+.header_main{
+	height: 100px;
+}
+.header_main .header_left{
+	display: flex;
+	align-items: center;
+	height: 100%;
+	float: left;
+	margin-left: 38px;
+}
+.header_main .header_left a img{
+	vertical-align: middle;
+}
+.header_right{
+	float: right;
+	width: 500px;
+	padding-top: 30px;
+}
+.header_right form{
+	height: 44px;
+	line-height: 44px;
+	border: 3px solid #cfb2f6;
+}
+.header_right .header_input{
+	float: left;
+	height: 100%;
+	line-height: 100%;
+	width: 436px;
+	z-index: 2;
+	border: 0;
+	background: none;
+	display: block;
+	padding-left: 10px;
+	border-radius: 2px;
+}
+.header_input:focus,.header_btn:focus{
+	outline: none;	
+}
+.header_input:focus,.header_btn i::before{
+	content: "\e615";
+	/* content: "\2716"; */
+}
+.header_right .header_btn{
+	width: 58px;
+	height: 38px;
+	line-height: 38px;
+	float: left;
+	background: #cfb2f6;
+	border: 0;
+	cursor: pointer;
+	transition: opacity 0.2s;
+}
+.header_right .header_btn i{
+	color: #fff;
+	font-size: 18px;
+	line-height: 38px;
+}
+.header_right .header_btn:hover{
+	opacity: 0.8;
+}
+/* content */
+.content{
+	width: 100%;
+}
+.content .content_content{
+	width: 100%;
+	border-bottom: 1px solid #cfb1f7;
+}
+.content .content_nav{
+	height: 100%;
+	padding-left: 40px;
+}
+.content .content_nav a{
+	margin-right: 75px;
+	display: inline-block;
+	font-size: 14px;
+	line-height: 36px;
+	color: #010101;
+}
+.content .content_nav a:last-child{
+	color: #cfb2f6;
+}
+.content .content_nav a:hover{
+	color: #cfb2f6;
+}
+.content .banner_bg{
+	height: 180px;
+	background: url("../img/buy_banner.jpg") no-repeat;
+	margin: 50px auto;
+	padding-left: 68px;
+	box-sizing: border-box;
+	color: #fff;
+}
+.content .banner_bg h1{
+	font-size: 36px;
+	padding: 40px 0 20px 0;
+}
+.content .banner_bg p{
+	font-size: 20px;
+}
+/* cart */
+.content .cart{
+	padding-bottom: 180px;
+}
+.content .cart_table_th{
+	height: 50px;
+	background: #f5f5f5;
+}
+.content .cart_table_th .th{
+	float: left;
+	line-height: 50px;
+}
+.content .cart_table_th .th_tck{
+	width: 70px;
+	margin-left: 43px;
+	text-align: left;
+}
+.content .cart_table_th .th_tck input{
+	vertical-align: -2px;
+}
+.content .cart_table_th .th_item{
+	width: 340px;
+	text-align: left;
+	padding-left: 90px;
+}
+.content .cart_table_th .th_price,.content .cart_table_th .th_amount,.content .cart_table_th .th_sum{
+	width: 200px;
+	text-align: center;
+}
+.content .cart_table_th .th_op{
+	width: 147px;
+	text-align: center;
+}
+/* 购物车商品 */
+.cart .orderList .item_content{
+	border: 1px solid #ececee;
+	border-bottom: 0;
+	height: 218px;
+	padding: 59px 0;
+	display: flex;
+	align-items: center;
+}
+.orderList .item_content .th{
+	float: left;
+	text-align: center;
+}
+.orderList .item_content .th_tck{
+	width: 100px;
+}
+.orderList .item_content .th_item{
+	width: 340px;
+	text-align: left;
+	padding-left: 90px;
+	display: flex;
+	align-items: center;
+}
+.orderList .item_content .th_item a{float: left;}
+.orderList .item_content .th_item img{
+	width: 98px;
+    height: 98px;
+    border: 1px solid #ececee;
+    margin-right: 20px;
+}
+.orderList .item_content .th_item .text{
+	float: left;
+	text-align: left;
+    line-height: 24px;
+}
+.orderList .item_content .th_item .title{
+	color: #333333;
+}
+.orderList .item_content .th_item p{
+	color: #888;
+}
+.orderList .item_content .th_price,.orderList .item_content .th_amount{
+	width: 220px;
+}
+.orderList .item_content .th_amount .box_btn{
+	padding-left: 52px;
+}
+.orderList .item_content .th_amount .box_btn .less{
+	width: 28px;
+    height: 36px;
+    float: left;
+    opacity: .8;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 14px;
+    white-space: nowrap;
+    line-height: 36px;
+    border: 1px solid #e2e2e2;
+}
+.orderList .item_content .th_amount .box_btn .quantity_input{
+	width: 46px;
+    height: 36px;
+    float: left;
+    border: 1px solid #e2e2e2;
+    text-align: center;
+    background: #ffffff;
+    margin-left: -1px;
+    color: #999999;
+}
+.orderList .item_content .th_amount .box_btn .add{
+	width: 28px;
+    height: 36px;
+    float: left;
+    opacity: .8;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 14px;
+    white-space: nowrap;
+    line-height: 36px;
+    border: 1px solid #e2e2e2;
+    border-left-width: 0px;
+}
+.orderList .item_content .th_sum{
+	width: 160px;
+}
+.orderList .item_content .th_sum .sum{
+	line-height: 24px;
+    color: #ee0000;
+    font-weight: bold;
+}
+.orderList .item_content .th_op{
+	width: 150px;
+}
+.orderList .item_content .th_op .dele_btn{
+	display: block;
+    cursor: pointer;
+    line-height: 24px;
+}
+/* 结算 */
+.content .float_barholder{
+	height: 84px;
+	border: 1px solid #ececee;
+	background: #f5f5f5;
+}
+.content .float_barholder .th{
+	line-height: 82px;
+	float: left;
+}
+.content .float_barholder .th_tck{
+	width: 150px;
+	text-align: center;
+}
+.content .float_barholder .batch_deletion{
+	text-align: center;
+}
+.content .float_barholder .batch_deletion .batch_dele_btn{
+	cursor: pointer;
+}
+.content .float_barholder .settlement{
+	float: right;
+}
+.content .float_barholder .settlement .balance{
+	width: 160px;
+	height: 83px;
+	line-height: 84px;
+	font-size: 24px;
+	color: #fff;
+	text-align: center;
+	background: #ff5500;
+	border-radius: 0;
+	border: 0px;
+	cursor: pointer;
+	transition: opacity 0.3s linear;
+}
+.content .float_barholder .settlement .balance:hover{
+	opacity: 0.8;
+}
+.content .float_barholder .total{
+	float: right;
+	margin-right: 70px;
+}
+.content .float_barholder .total p{
+	line-height: 82px;
+}
+.content .float_barholder .total .pieces_total{
+	color: #ee0000;
+	font-size: 26px;
+	font-weight: bold;
+	padding-left: 5px;
+}
+
+/* 支付页面 */
+.alertdiv{
+	display: none;
+	width: 450px;
+	height: 300px;
+	background: rgba(0, 0, 0, 0.7);
+	border-radius: 5px;
+	position: fixed;
+	top: 50%;
+	margin-top: -150px;
+	margin-left: -225px;
+	left: 50%;
+	z-index: 999;
+}
+.alertdiv>h1{
+	font-size: 20px;
+	margin: 8px 20px;
+	float: left;
+	color: #fff;
+}
+.alertdiv>h1>span{
+	font-size: 22px;
+	margin: 8px 20px;
+	color: yellow;
+}
+.alertdiv .close {
+    color: #000;
+    float: right;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    font-size: 18px;
+    line-height: 36px;
+    margin-right: 10px;
+    transition: color 0.3s linear;
+}
+.close::before {
+    content: "\2716";
+}
+.alertdiv .close:hover{
+    color: #aaa;
+}
+.alertdiv div{
+	width: 50%;
+	float: left;
+	text-align: center;
+	color: #fff;
+}
+.alertdiv div h1{
+	font-size: 18px;
+}
+.alertdiv div img{
+	width: 200px;
+	height: 200px;
+	margin-top: 10px;
+	border-radius: 5px;
+}
